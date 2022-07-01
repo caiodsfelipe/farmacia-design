@@ -1,0 +1,233 @@
+body, html {
+  font-family: 'Roboto', sans-serif
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative
+}
+
+header {
+  min-height: 50px;
+  background: #e0ffff
+}
+
+/* Trick: */
+body {
+  position: relative
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px
+    /* Set same as footer's height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px
+}
+
+.fs-7 {
+  font-size: .75rem !important
+}
+
+@media (max-width: 767px) {
+  .center-only-sm {
+    display: grid;
+    place-items: center
+  }
+}
+
+.carousel-item img {
+  max-height: 350px;
+  border-radius: 0 !important
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.55)
+}
+
+.filter-row {
+  display: flex;
+  align-items: center
+}
+
+.ul-filtros {
+  width: max-content
+}
+
+.row>* {
+  padding-right: calc(var(--bs-gutter-x) * .3);
+  padding-left: calc(var(--bs-gutter-x) * .3);
+  margin-top: var(--bs-gutter-y)
+}
+
+.col-produtos {
+  padding-right: 0 !important
+}
+
+.navbar-collapse {
+  background-color: #fff
+}
+
+.img-principal {
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 10%
+}
+
+h5, h6 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.55)
+}
+
+.center {
+  display: grid;
+  place-items: center
+}
+
+.card-text {
+  font-size: medium !important;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.produto-nome {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+  text-transform: uppercase
+}
+
+.bg-grey {
+  background-color: #F6F6F6
+}
+
+.card-footer {
+  background-color: #F6F6F6
+}
+
+.produto-marca {
+  color: #666;
+  font-weight: 700;
+  font-size: 14px
+}
+
+.produto-valor {
+  color: #111;
+  font-size: 16px;
+  font-weight: 700
+}
+
+.card {
+  border: none
+}
+
+.card-produto {
+  border: var(--bs-card-border-width) solid #F6F6F6;
+  cursor: pointer
+}
+
+.card-produto .card-footer {
+  border: var(--bs-card-border-width) solid #F6F6F6
+}
+
+img {
+  border-radius: 50px !important;
+  object-fit: cover
+}
+
+.navbar-light {
+  background-color: #fff !important
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.55)
+}
+
+.nav .nav-item {
+  font-size: small
+}
+
+.navbar-toggler {
+  border: none
+}
+
+.navbar-brand {
+  font-size: x-large
+}
+
+.nav-item {
+  margin-inline: 15px
+}
+
+.nav-link:hover {
+  color: #000;
+  cursor: pointer
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: #000
+}
+
+.bg-light {
+  background-color: #fff !important
+}
+
+.card-img-top {
+  border-radius: 0 !important
+}
+
+a {
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none
+}
+
+p {
+  font-size: small !important;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.55)
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.card-produto:hover .container-img div {
+  background-color: #55555529;
+  opacity: 1
+}
+
+.container-img {
+  position: relative
+}
+
+.container-img div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  opacity: 0
+}
+
+/* Make the image responsive */
+.container-img img {
+  width: 100%;
+  height: auto
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container-img .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
